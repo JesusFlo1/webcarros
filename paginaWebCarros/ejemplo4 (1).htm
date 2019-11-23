@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--<title>Comparacion de autos</title>-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <link rel="Stylesheet" href="common.css" />
+    <style type="text/css">
+
+		
+        h1 {
+			column-span:all;
+			font-family: helvetica;
+			font-style: italic;
+			animation-duration: 2s;
+			animation-name: slidein;
+			background-image: url(https://lh3.googleusercontent.com/-1Dclq7MdV7s/Wni5Nd3qv_I/AAAAAAAEswM/gnPo-vSfWmgRsdxC1M87k5oOOJUJcF3xgCHMYCw/s640/0_e8894_f5e46bb4_orig.gif);
+			background-size: cover;
+			color: transparent;
+			-moz-background-clip: text;
+			-webkit-background-clip: text;
+			text-transform: uppercase;
+			font-size: 120px;
+			line-height: .75;
+			margin: 10px 0;
+		}
+		@keyframes slidein {
+		from {
+			margin-left: 100%;
+			width: 300%
+		}
+
+		to {
+			margin-left: 0%;
+			width: 100%;
+		}
+		}
+
+
+		ul, ol {
+			list-style: none;
+		}
+		.header {
+			position: fixed;
+			
+			margin: auto;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.nav li a {
+			background-color: cyan;
+			color: rgb(47,79,79);
+			text-decoration: none;
+			display:block:;
+			padding: 10px 15px;
+		}
+
+		.nav > li {
+			float:right;
+		}
+		.boton_1{
+
+			text-decoration: none;
+			padding: 3px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-family: helvetica;
+			font-weight: 300;
+			font-size: 25px;
+			font-style: italic;
+			color: red;
+			background-color: orange;
+			border-radius: 15px;
+			border: 3px double yellow;
+		}
+		.boton_1:hover{
+			opacity: 0.6;
+			text-decoration: none;
+		}
+		#contenedor {
+		overflow: hidden;
+		}
+		#izquierda {
+		height: 0px;
+		float: left;
+		}
+		#derecha {
+		float: right;
+		}
+		#seleccion{
+			width: 380px;
+			height: 300px;
+		}
+		select{
+			width: 380px;
+		}
+		main
+		{
+			background-color: white;
+			padding:3rem;
+			margin:3rem auto;
+			max-width:800px;
+			display:block;
+		}
+	</style>
+
+</head>
+<body>
+
+		<div class="header">
+			<h1 class="header_logo"><FONT FACE="tahoma">Comparación de Autos</FONT></h1>
+			<!--<button onclick="location.href='log.html'">Login</button>-->
+			<ul class="nav">
+				<li><a href="./reg.html">Registro</a></li>
+				<li><a href="./log.php">Iniciar Sesion</a></li>
+			</ul>
+		</div>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<img src=https://media3.giphy.com/media/3oriO8PMMygH4IrF4Y/source.gif style="width:100%;height:auto;"/>
+   
+	<main>
+	<section>
+	<div id="contenedor">
+		<div id="izquierda">
+        <h2>Auto1</h2></br><img id="seleccion" src="https://i.makeagif.com/media/7-23-2015/jNAT3j.gif" width="0" height="230" /> 
+		</br>
+		<select>
+		<optgroup label="Audi">
+			<option value="A1">A1</option>
+			<option value="A3">A3</option>
+			<option value="A5">A5</option>
+			<option value="A7">A7</option>
+			<option value="Q2">Q2</option>
+			<option value="Q3">Q3</option>
+			<option value="Q5">Q5</option>
+			<option value="Q7">Q7</option>
+			<option value="Q8">Q8</option>
+			<option value="S3">S3</option>
+			<option value="TT">TT</option>
+			<option value="R8">R8</option>
+		</optgroup>
+		<optgroup label="BMW">
+			<option value="i3">i3</option>
+			<option value="Serie1">Serie 1</option>
+			<option value="Serie3">Serie 3</option>
+			<option value="Serie4">Serie 4</option>
+			<option value="Serie5">Serie 5</option>
+			<option value="Serie6">Serie 6</option>
+			<option value="Serie7">Serie 7</option>
+			<option value="i8">i8</option>
+			<option value="X1">X1</option>
+			<option value="X3">X3</option>
+			<option value="X5">X5</option>
+			<option value="X6">X6</option>
+
+		</optgroup>
+		<optgroup label="Cadillac">
+			<option value="ATS">ATS</option>
+			<option value="CTS">CTS</option>
+			<option value="Escalade">Escalade</option>
+			<option value="XT5">XT5</option>
+			<option value="XT4">XT4</option>
+		</optgroup>
+		<optgroup label="Chevrolet">
+				<option value="Aveo">Aveo</option>
+				<option value="Beat">Beat</option>
+				<option value="Cavalier">Cavalier</option>
+				<option value="Cruze">Cruze</option>
+				<option value="Spark">Spark</option>
+				<option value="Camaro">Camaro</option>
+				<option value="Equinox">Equinox</option>
+				<option value="Malibu">Malibu</option>
+				<option value="Corvette">Corvette</option>
+				<option value="Trax">Trax</option>
+				<option value="Traverse">Traverse</option>
+				<option value="Blazer">Blazer</option>
+				<option value="Silverado">Silverado</option>
+				<option value="Tahoe">Tahoe</option>
+				<option value="Suburban">Suburban</option>
+				<option value="Tornado">Tornado</option>
+				<option value="Colorado">Colorado</option>
+		</optgroup>
+		<optgroup label="Chrysler">
+				<option value="Pacifica">Pacifica</option>
+				<option value="300C">300C</option>
+		</optgroup>
+		<optgroup label="Dodge">
+			<option value="Attitude">Attitude</option>
+			<option value="Vision">Vision</option>
+			<option value="Neon">Neon</option>
+			<option value="Durango">Durango</option>
+			<option value="Challenger">Challeger</option>
+			<option value="Charger">Charger</option>
+			<option value="Journey">Journey</option>
+			<option value="Viper">Viper</option>
+		</optgroup>
+		<optgroup label="Ferrari">
+			<option value="458Italia">458 Italia</option>
+			<option value="599GTB">599 GTB Fiorano</option>
+			<option value="California">California</option>
+			<option value="FF">FF</option>
+			<option value="LaFerrari">LaFerrari</option>
+			<option value="488GTB">488 GTB</option>
+			<option value="F12Berlinetta">F12 Berlinetta</option>
+		</optgroup>
+		<optgroup label="Fiat">
+			<option value="Palio">Palio</option>
+			<option value="Uno">Uno</option>
+			<option value="500">500</option>
+			<option value="500X">500X</option>
+			<option value="500L">500L</option>
+			<option value="Ducato">Ducato</option>
+			<option value="Mobi">Mobi</option>
+		</optgroup>
+		<optgroup label="Ford">
+			<option value="Figo">Figo</option>
+			<option value="Fiesta">Fiesta</option>
+			<option value="Focus">Focus</option>
+			<option value="Fusion">Fusion</option>
+			<option value="EcoSport">EcoSport</option>
+			<option value="Escape">Escape</option>
+			<option value="Edge">Edge</option>
+			<option value="Explorer">Explorer</option>
+			<option value="Expedition">Expedition</option>
+			<option value="Lobo">Lobo</option>
+			<option value="Mustang">Mustang</option>
+			<option value="Ranger">Ranger</option>
+			<option value="Transit">Transit</option>
+		</optgroup>
+		<optgroup label="GMC">
+			<option value="Yukon">Yukon</option>
+			<option value="Sierra">Sierra</option>
+			<option value="Acadia">Acadia</option>
+			<option value="Terrain">Terrain</option>
+		</optgroup>
+		<optgroup label="Honda">
+			<option value="City">City</option>
+			<option value="Civic">Civic</option>
+			<option value="Accord">Accord</option>
+			<option value="HRV">HR-V</option>
+			<option value="CRV">CR-V</option>
+			<option value="Pilot">Pilot</option>
+			<option value="Odyssey">Odyssey</option>
+			<option value="BRV">BR-V</option>
+		</optgroup>
+		<optgroup label="Hyundai">
+			<option value="i10">i10</option>
+			<option value="Elantra">Elantra</option>
+			<option value="Sonata">Sonata</option>
+			<option value="Accent">Accent</option>
+			<option value="Tucson">Tucson</option>
+			<option value="SantaFe">Santa Fe</option>
+			<option value="Creta">Creta</option>
+		</optgroup>
+		<optgroup label="Jeep">
+			<option value="Renegade">Renegade</option>
+			<option value="Compass">Compass</option>
+			<option value="Wrangler">Wrangler</option>
+			<option value="Cherokee">Cherokee</option>
+		</optgroup>
+		<optgroup label="Kia">
+			<option value="Forte">Forte</option>
+			<option value="Rio">Rio</option>
+			<option value="Sportage">Sportage</option>
+			<option value="Sorento">Sorento</option>
+			<option value="Optima">Optima</option>
+			<option value="Soul">Soul</option>
+			<option value="Niro">Niro</option>
+			<option value="Sedona">Sedona</option>
+		</optgroup>
+		<optgroup label="Lamborguini">
+			<option value="Huracan">Huracan</option>
+			<option value="Aventador">Aventador</option>
+		</optgroup>
+		<optgroup label="Mazda">
+			<option value="Mazda2">Mazda 2</option>
+			<option value="Mazda3">Mazda 3</option>
+			<option value="Mazda6">Mazda 6</option>
+			<option value="CX3">CX-3</option>
+			<option value="CX5">CX-5</option>
+			<option value="CX9">CX-9</option>
+			<option value="MX5">MX5</option>
+		</optgroup>
+		<optgroup label="Mercedes-Benz">
+			<option value="ClaseA">Clase A</option>
+			<option value="ClaseC">Clase C</option>
+			<option value="ClaseE">Clase E</option>
+			<option value="ClaseCLS">Clase CLS</option>
+			<option value="ClaseS">Clase S</option>
+			<option value="ClaseSLK">Clase SLK</option>
+			<option value="ClaseGLA">Clase GLA</option>
+			<option value="ClaseGLK">Clase GLK</option>
+			<option value="AMGGT">AMG GT</option>
+		</optgroup>
+		<optgroup label="Nissan">
+			<option value="March">March</option>
+			<option value="Versa">Versa</option>
+			<option value="Sentra">Sentra</option>
+			<option value="Altima">Altima</option>
+			<option value="Kicks">Kicks</option>
+			<option value="XTrail">X-Trail</option>
+			<option value="NP300">NP300</option>
+			<option value="370Z">370-Z</option>
+		</optgroup>
+		<optgroup label="Peugeot">
+			<option value="208">208</option>
+			<option value="301">301</option>
+			<option value="308">308</option>
+			<option value="2008">2008</option>
+			<option value="3008">3008</option>
+			<option value="5008">5008</option>
+		</optgroup>
+		<optgroup label="Porsche">
+			<option value="Boxter">Boxter</option>
+			<option value="Cayman">Cayman</option>
+			<option value="911">911</option>
+			<option value="Cayenne">Cayenne</option>
+			<option value="Macan">Macan</option>
+			<option value="Panamera">Panamera</option>
+		</optgroup>
+		<optgroup label="Renault">
+			<option value="Sandero">Sandero</option>
+			<option value="Kwid">Kwid</option>
+			<option value="Logan">Logan</option>
+			<option value="Koleos">Koleos</option>
+			<option value="Duster">Duster</option>
+			<option value="Kangoo">Kangoo</option>
+		</optgroup>
+		<optgroup label="Seat">
+			<option value="Ibiza">Ibiza</option>
+			<option value="Toledo">Toledo</option>
+			<option value="Leon">Leon</option>
+			<option value="Ateca">Ateca</option>
+			<option value="Tarraco">Tarraco</option>
+		</optgroup>
+		<optgroup label="Toyota">
+			<option value="Yaris">Yaris</option>
+			<option value="Corolla">Corolla</option>
+			<option value="Prius">Prius</option>
+			<option value="Camry">Camry</option>
+			<option value="Highlander">Highlander</option>
+			<option value="Hilux">Hilux</option>
+			<option value="Rav4">RAV4</option>
+			<option value="CHR">CH-R</option>
+		</optgroup>
+		<optgroup label="Volkswagen">
+			<option value="Gol">Gol</option>
+			<option value="Vento">Vento</option>
+			<option value="Virtus">Virtus</option>
+			<option value="Jetta">Jetta</option>
+			<option value="Golf">Golf</option>
+			<option value="Passat">Passat</option>
+			<option value="Beetle">Beetle</option>
+			<option value="Amarok">Amarok</option>
+			<option value="Tiguan">Tiguan</option>
+			<option value="Teramont">Teramont</option>
+		</optgroup>
+		</select>
+	</div>
+	<div id="derecha">
+        <h2>Auto2</h2></br><img id="seleccion" src="https://thumbs.gfycat.com/BoringCriminalEstuarinecrocodile-max-1mb.gif" width="2000" height="230"  />
+		</br>
+		<select>
+			<optgroup label="Audi">
+				<option value="A1">A1</option>
+				<option value="A3">A3</option>
+				<option value="A5">A5</option>
+				<option value="A7">A7</option>
+				<option value="Q2">Q2</option>
+				<option value="Q3">Q3</option>
+				<option value="Q5">Q5</option>
+				<option value="Q7">Q7</option>
+				<option value="Q8">Q8</option>
+				<option value="S3">S3</option>
+				<option value="TT">TT</option>
+				<option value="R8">R8</option>
+			</optgroup>
+			<optgroup label="BMW">
+				<option value="i3">i3</option>
+				<option value="Serie1">Serie 1</option>
+				<option value="Serie3">Serie 3</option>
+				<option value="Serie4">Serie 4</option>
+				<option value="Serie5">Serie 5</option>
+				<option value="Serie6">Serie 6</option>
+				<option value="Serie7">Serie 7</option>
+				<option value="i8">i8</option>
+				<option value="X1">X1</option>
+				<option value="X3">X3</option>
+				<option value="X5">X5</option>
+				<option value="X6">X6</option>
+	
+			</optgroup>
+			<optgroup label="Cadillac">
+				<option value="ATS">ATS</option>
+				<option value="CTS">CTS</option>
+				<option value="Escalade">Escalade</option>
+				<option value="XT5">XT5</option>
+				<option value="XT4">XT4</option>
+			</optgroup>
+			<optgroup label="Chevrolet">
+					<option value="Aveo">Aveo</option>
+					<option value="Beat">Beat</option>
+					<option value="Cavalier">Cavalier</option>
+					<option value="Cruze">Cruze</option>
+					<option value="Spark">Spark</option>
+					<option value="Camaro">Camaro</option>
+					<option value="Equinox">Equinox</option>
+					<option value="Malibu">Malibu</option>
+					<option value="Corvette">Corvette</option>
+					<option value="Trax">Trax</option>
+					<option value="Traverse">Traverse</option>
+					<option value="Blazer">Blazer</option>
+					<option value="Silverado">Silverado</option>
+					<option value="Tahoe">Tahoe</option>
+					<option value="Suburban">Suburban</option>
+					<option value="Tornado">Tornado</option>
+					<option value="Colorado">Colorado</option>
+			</optgroup>
+			<optgroup label="Chrysler">
+					<option value="Pacifica">Pacifica</option>
+					<option value="300C">300C</option>
+			</optgroup>
+			<optgroup label="Dodge">
+				<option value="Attitude">Attitude</option>
+				<option value="Vision">Vision</option>
+				<option value="Neon">Neon</option>
+				<option value="Durango">Durango</option>
+				<option value="Challenger">Challeger</option>
+				<option value="Charger">Charger</option>
+				<option value="Journey">Journey</option>
+				<option value="Viper">Viper</option>
+			</optgroup>
+			<optgroup label="Ferrari">
+				<option value="458Italia">458 Italia</option>
+				<option value="599GTB">599 GTB Fiorano</option>
+				<option value="California">California</option>
+				<option value="FF">FF</option>
+				<option value="LaFerrari">LaFerrari</option>
+				<option value="488GTB">488 GTB</option>
+				<option value="F12Berlinetta">F12 Berlinetta</option>
+			</optgroup>
+			<optgroup label="Fiat">
+				<option value="Palio">Palio</option>
+				<option value="Uno">Uno</option>
+				<option value="500">500</option>
+				<option value="500X">500X</option>
+				<option value="500L">500L</option>
+				<option value="Ducato">Ducato</option>
+				<option value="Mobi">Mobi</option>
+			</optgroup>
+			<optgroup label="Ford">
+				<option value="Figo">Figo</option>
+				<option value="Fiesta">Fiesta</option>
+				<option value="Focus">Focus</option>
+				<option value="Fusion">Fusion</option>
+				<option value="EcoSport">EcoSport</option>
+				<option value="Escape">Escape</option>
+				<option value="Edge">Edge</option>
+				<option value="Explorer">Explorer</option>
+				<option value="Expedition">Expedition</option>
+				<option value="Lobo">Lobo</option>
+				<option value="Mustang">Mustang</option>
+				<option value="Ranger">Ranger</option>
+				<option value="Transit">Transit</option>
+			</optgroup>
+			<optgroup label="GMC">
+				<option value="Yukon">Yukon</option>
+				<option value="Sierra">Sierra</option>
+				<option value="Acadia">Acadia</option>
+				<option value="Terrain">Terrain</option>
+			</optgroup>
+			<optgroup label="Honda">
+				<option value="City">City</option>
+				<option value="Civic">Civic</option>
+				<option value="Accord">Accord</option>
+				<option value="HRV">HR-V</option>
+				<option value="CRV">CR-V</option>
+				<option value="Pilot">Pilot</option>
+				<option value="Odyssey">Odyssey</option>
+				<option value="BRV">BR-V</option>
+			</optgroup>
+			<optgroup label="Hyundai">
+				<option value="i10">i10</option>
+				<option value="Elantra">Elantra</option>
+				<option value="Sonata">Sonata</option>
+				<option value="Accent">Accent</option>
+				<option value="Tucson">Tucson</option>
+				<option value="SantaFe">Santa Fe</option>
+				<option value="Creta">Creta</option>
+			</optgroup>
+			<optgroup label="Jeep">
+				<option value="Renegade">Renegade</option>
+				<option value="Compass">Compass</option>
+				<option value="Wrangler">Wrangler</option>
+				<option value="Cherokee">Cherokee</option>
+			</optgroup>
+			<optgroup label="Kia">
+				<option value="Forte">Forte</option>
+				<option value="Rio">Rio</option>
+				<option value="Sportage">Sportage</option>
+				<option value="Sorento">Sorento</option>
+				<option value="Optima">Optima</option>
+				<option value="Soul">Soul</option>
+				<option value="Niro">Niro</option>
+				<option value="Sedona">Sedona</option>
+			</optgroup>
+			<optgroup label="Lamborguini">
+				<option value="Huracan">Huracan</option>
+				<option value="Aventador">Aventador</option>
+			</optgroup>
+			<optgroup label="Mazda">
+				<option value="Mazda2">Mazda 2</option>
+				<option value="Mazda3">Mazda 3</option>
+				<option value="Mazda6">Mazda 6</option>
+				<option value="CX3">CX-3</option>
+				<option value="CX5">CX-5</option>
+				<option value="CX9">CX-9</option>
+				<option value="MX5">MX5</option>
+			</optgroup>
+			<optgroup label="Mercedes-Benz">
+				<option value="ClaseA">Clase A</option>
+				<option value="ClaseC">Clase C</option>
+				<option value="ClaseE">Clase E</option>
+				<option value="ClaseCLS">Clase CLS</option>
+				<option value="ClaseS">Clase S</option>
+				<option value="ClaseSLK">Clase SLK</option>
+				<option value="ClaseGLA">Clase GLA</option>
+				<option value="ClaseGLK">Clase GLK</option>
+				<option value="AMGGT">AMG GT</option>
+			</optgroup>
+			<optgroup label="Nissan">
+				<option value="March">March</option>
+				<option value="Versa">Versa</option>
+				<option value="Sentra">Sentra</option>
+				<option value="Altima">Altima</option>
+				<option value="Kicks">Kicks</option>
+				<option value="XTrail">X-Trail</option>
+				<option value="NP300">NP300</option>
+				<option value="370Z">370-Z</option>
+			</optgroup>
+			<optgroup label="Peugeot">
+				<option value="208">208</option>
+				<option value="301">301</option>
+				<option value="308">308</option>
+				<option value="2008">2008</option>
+				<option value="3008">3008</option>
+				<option value="5008">5008</option>
+			</optgroup>
+			<optgroup label="Porsche">
+				<option value="Boxter">Boxter</option>
+				<option value="Cayman">Cayman</option>
+				<option value="911">911</option>
+				<option value="Cayenne">Cayenne</option>
+				<option value="Macan">Macan</option>
+				<option value="Panamera">Panamera</option>
+			</optgroup>
+			<optgroup label="Renault">
+				<option value="Sandero">Sandero</option>
+				<option value="Kwid">Kwid</option>
+				<option value="Logan">Logan</option>
+				<option value="Koleos">Koleos</option>
+				<option value="Duster">Duster</option>
+				<option value="Kangoo">Kangoo</option>
+			</optgroup>
+			<optgroup label="Seat">
+				<option value="Ibiza">Ibiza</option>
+				<option value="Toledo">Toledo</option>
+				<option value="Leon">Leon</option>
+				<option value="Ateca">Ateca</option>
+				<option value="Tarraco">Tarraco</option>
+			</optgroup>
+			<optgroup label="Toyota">
+				<option value="Yaris">Yaris</option>
+				<option value="Corolla">Corolla</option>
+				<option value="Prius">Prius</option>
+				<option value="Camry">Camry</option>
+				<option value="Highlander">Highlander</option>
+				<option value="Hilux">Hilux</option>
+				<option value="Rav4">RAV4</option>
+				<option value="CHR">CH-R</option>
+			</optgroup>
+			<optgroup label="Volkswagen">
+				<option value="Gol">Gol</option>
+				<option value="Vento">Vento</option>
+				<option value="Virtus">Virtus</option>
+				<option value="Jetta">Jetta</option>
+				<option value="Golf">Golf</option>
+				<option value="Passat">Passat</option>
+				<option value="Beetle">Beetle</option>
+				<option value="Amarok">Amarok</option>
+				<option value="Tiguan">Tiguan</option>
+				<option value="Teramont">Teramont</option>
+			</optgroup>
+		
+		</select>
+	</div>	
+	</div>
+	</section>
+	</br>
+	<section><a href="" style="width:10px;height:3000px;" class="boton_1">Comparar</a></section>
+	</main>	
+	
+	
+	<!--https://media.blendernation.com/wp-content/uploads/2014/10/doors_animation.gif-->
+    <footer>
+        <div class='footer'>
+        <h4>Misión</h4>
+	<p>Informar a las personas sobre antes de decidir por una compra, o por puro gusto, cual es el mejor carro entre los que el usuario quiere.</p>
+	<h4>Visión</h4>
+	<p>Ser una herramienta útil para informarte sobre los autos en los que piensas y aclarar tus dudas present�ndote una información clara y concisa.</p>
+        </div>
+	</footer>
+<script>src="navbarScroll.js"  </script>
+</body>
+</html>

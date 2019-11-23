@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Practica 5</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+        <style type="text/css">
+            #pie {
+                position: fixed;
+            }
+            ul, ol{
+                list-style: none;
+            }
+            .nav {
+                position: fixed;
+            }
+            body {
+                background-color:cyan;
+                
+                margin:3rem auto;
+                max-height:1900px;
+                max-width:1200px;
+                display:fixed;/*para IE*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <!--<button onclick="location.href='log.html'">Login</button>-->
+            <ul class="nav">
+            <li><a href="./ejemplo4 (1).htm">Pagina principal</a></li>
+           </ul>
+        </div>
+        <picture class="imgcontainer">
+            <img src="add.png" alt="Avatar" class="avatar"> 
+        </picture>
+        <div>
+            <form action = "login2.php" method = "post" >        
+                    <fieldset>
+                        <!--<legend>Datos personales </legend>-->
+                        
+                        <p>
+                            
+                        <label>Usuario:</label> <input type="text" name="Nombre_control" id = "NOM"  placeholder="Usuario" required/>
+                        <label>Nombre:</label> <input type="text" name="Nombre_control" id = "nombr"  placeholder="Nombre" required/>
+                        <label>E-mail:</label> <input type="text" name="Nombre_control" id = "EMAI"  placeholder="Correo" required/>
+                        <label>CONTRASEÑA:</label><input type="password" name="Contrasena" id = "Con" placeholder="Contraseña" required />
+                        <label>Vuelve a repetir contraseña:</label><input type="password" name="Contrasena_control" id = "Con" placeholder="Contraseña" required />
+                        </p>     
+                        <button type="submit" >Registrarse</button>
+                    
+                    </fieldset>
+                   
+                </form>
+                
+        </div>  
+        <!--<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>-->
+        <div id="pie">
+            <ul class="nav">
+                <li><a href="./log.html">¿Ya tienes cuenta?</a></li>
+            </ul>
+        </div>    
+
+    </body>
+</html>

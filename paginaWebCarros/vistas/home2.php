@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--<title>Comparacion de autos</title>-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <link rel="Stylesheet" href="common.css" />
+    <style type="text/css">
+
+		
+        h1 {
+			column-span:all;
+			font-family: helvetica;
+			font-style: italic;
+			animation-duration: 2s;
+			animation-name: slidein;
+			background-image: url(https://lh3.googleusercontent.com/-1Dclq7MdV7s/Wni5Nd3qv_I/AAAAAAAEswM/gnPo-vSfWmgRsdxC1M87k5oOOJUJcF3xgCHMYCw/s640/0_e8894_f5e46bb4_orig.gif);
+			background-size: cover;
+			color: transparent;
+			-moz-background-clip: text;
+			-webkit-background-clip: text;
+			text-transform: uppercase;
+			font-size: 120px;
+			line-height: .75;
+			margin: 10px 0;
+		}
+		@keyframes slidein {
+		from {
+			margin-left: 100%;
+			width: 300%
+		}
+
+		to {
+			margin-left: 0%;
+			width: 100%;
+		}
+		}
+
+
+		ul, ol {
+			list-style: none;
+		}
+		.header {
+			position: fixed;
+			
+			margin: auto;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.nav li a {
+			background-color: cyan;
+			color: rgb(47,79,79);
+			text-decoration: none;
+			display:block:;
+			padding: 10px 15px;
+		}
+
+		.nav > li {
+			float:right;
+		}
+		.boton_1{
+
+			text-decoration: none;
+			padding: 3px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-family: helvetica;
+			font-weight: 300;
+			font-size: 25px;
+			font-style: italic;
+			color: red;
+			background-color: orange;
+			border-radius: 15px;
+			border: 3px double yellow;
+		}
+		.boton_1:hover{
+			opacity: 0.6;
+			text-decoration: none;
+		}
+		#contenedor {
+		overflow: hidden;
+		}
+		#izquierda {
+		height: 0px;
+		float: left;
+		}
+		#derecha {
+		float: right;
+		}
+		#seleccion{
+			width: 380px;
+			height: 300px;
+		}
+		select{
+			width: 380px;
+		}
+		main
+		{
+			background-color: white;
+			padding:3rem;
+			margin:3rem auto;
+			max-width:800px;
+			display:block;
+		}
+	</style>
+
+</head>
+<body>
+
+		<div class="header">
+			<h1 class="header_logo"><FONT FACE="tahoma">Comparación de Autos</FONT></h1>
+			<!--<button onclick="location.href='log.html'">Login</button>-->
+			<ul class="nav">
+				<li><a href="./reg.html">Registro</a></li>
+				<li><a href="./log.html">Iniciar Sesion</a></li>
+			</ul>
+		</div>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+
+   
+	<main>
+
+    <div id="menu">
+        <ul>
+            <li>Home</li>
+            <li class="cerrar-sesion">
+                <a href="includes/logout.php">Cerrar sesión</a>
+            </li>
+        </ul>
+    </div>
+
+    <section>
+        <h1>Bienvenido <?php echo $user->getNombre(); ?> </h1>
+    </section>
+
+
+	</main>	
+	
+	
+	<!--https://media.blendernation.com/wp-content/uploads/2014/10/doors_animation.gif-->
+    <footer>
+        <div class='footer'>
+        <h4>Misión</h4>
+	<p>Informar a las personas sobre antes de decidir por una compra, o por puro gusto, cual es el mejor carro entre los que el usuario quiere.</p>
+	<h4>Visión</h4>
+	<p>Ser una herramienta útil para informarte sobre los autos en los que piensas y aclarar tus dudas present�ndote una información clara y concisa.</p>
+        </div>
+	</footer>
+<script>src="navbarScroll.js"  </script>
+</body>
+</html>
